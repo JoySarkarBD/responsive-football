@@ -1,0 +1,120 @@
+/* Google Fonts Improted */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+/* Universal CSS */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Header Section CSS */
+
+main{
+    width: 100%;
+    background-color: #2D25A0;
+}
+
+.header-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-content{
+    width: 50%;
+    margin-left:10% ;
+}
+
+.left-part h1{
+    width: 485px;
+    height: 230px;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+.left-part h1:hover{
+    transform: scale(1.1);
+}
+
+.header-btn{
+    width: 168px;
+    height: 44px;
+    background-color:  #E02C6D;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.header-btn a{
+    position: absolute;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    top: 25%;
+    left: 19%;
+    text-decoration: none;   
+}
+
+.header-btn a>i{
+    margin-left: 8px;
+}
+
+.header-btn:hover{
+    transform: scale(1.1);    
+}
+
+.header-content img{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 135px;
+    margin-bottom: 86px;
+    transition: all 0.5s;
+}
+
+.header-content img:hover{
+    transform: scale(1.1);
+}
+
+/* Reponsive Design */
+
+@media only screen and (max-width:688px) {
+
+    
+    main{
+        width: 100%;
+        height: 656px;
+    }
+
+    .header-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content{
+        width: 90%;
+        margin: 0;
+    }
+
+    .left-part h1{
+        width: 100%;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: 112px;
+    }
+
+    .header-content img{
+        width: 100%;
+        height: 259.17px;
+        margin-top: 50px;
+        margin-bottom: 22px;
+    }
+    
+}
