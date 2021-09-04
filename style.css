@@ -1,286 +1,264 @@
-/* Google Fonts Improted */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+/* import fonts  */
 
-/* Universal CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles */
 
 body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+    margin: 0;
 }
 
-/* Main Header Section CSS */
+/* header section start  */
 
-main{
-    width: 100%;
+header{
     background-color: #2D25A0;
 }
+/* main section start  */
 
-.header-container{
-    width: 80%;
+main{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: column;
 }
 
-.header-content{
-    width: 50%;
-    margin-left:10% ;
-}
 
-.left-part h1{
-    width: 485px;
-    height: 230px;
+/* copa section strat  */
+.container{
+    width: 1080px;
+    display: flex;
+    color: #fff;
+    margin: 50px 0 80px;
+    justify-content: space-between;
+}
+.copa-title h1{
     font-size: 64px;
-    line-height: 80px;
-    color: #FFFFFF;
-    transition: all 0.5s;
 }
-
-.left-part h1:hover{
-    transform: scale(1.1);
+.copa-button i{
+    cursor: pointer;
 }
-
-.header-btn{
-    width: 168px;
-    height: 44px;
-    background-color:  #E02C6D;
-    position: relative;
-    border-radius: 5px;
-    transition: all 0.5s;
-}
-
-.header-btn a{
-    position: absolute;
+.copa-button button{
+    background-color: #E02C6D;
+    /* display: flex; */
+    border:none;
+    color: #fff;
+    padding: 12px 24px;
+    justify-content: space-between;
+    margin-top: -40px;
     font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    top: 25%;
-    left: 19%;
-    text-decoration: none;   
+}
+.copa-button button > i{
+    margin-left: 10px;
+}
+.copa-banner img{
+    width: 100%;
+    transition: 1.5s ease-in-out;
+}
+.container:hover .copa-banner img{
+    transform: rotate(360deg) scale(.70);
+    position: relative;
 }
 
-.header-btn a>i{
-    margin-left: 8px;
-}
 
-.header-btn:hover{
-    transform: scale(1.1);    
-}
 
-.header-content img{
-    width: 556.01px;
-    height: 438px;
-    margin-top: 135px;
-    margin-bottom: 86px;
-    transition: all 0.5s;
-}
+/* player section  strat*/
 
-.header-content img:hover{
-    transform: scale(1.1);
+.player-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 65px;
 }
+.player{
+    width: 308px;
+    height: 440px;
+    background-color: #fff;
+    padding: 14px;
+    box-shadow: 0px 0px 40px 0px #00000026;
 
-/* Gallery Section Css Start */
-.gallery{
+}
+.player-image img{
     width: 100%;
 }
-
-.container{
-    width: 80%;
-    margin: 70px auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.player-name h4{
+    font-size: 28px;
+    margin: 5px 0;
+}
+.player-description p{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin: 0;
 }
 
-.players-info{
+
+
+/* video section start  */
+
+.video-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.video-section-title{
+    color: #173562;
+    font-size: 32px;
+    margin-top: 100px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 48px;
+}
+.video{
+    width: 280px;
+    height: 425px;
+    background-color: #1E1E1E;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.video-title h4{
+    font-size: 20px;
+    margin-top: 0;
+}
+.video-date p{
+    font-size: 15px;
+}
+.video-title, .video-date{
+    padding: 0 10px;
+}
+.video-date{
+    bottom: 0;
+    position: absolute;
+}
+
+/* sponsor section strat  */
+
+.sponsor-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sponsor-title{
+    margin-top: 100px;
+    color: #173562;
+    font-size: 32px;
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0 30px;
+}
+.sponsor{
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    border-radius: 50px;
+}
+.sponsor img{
+    width: 80%;
+    padding: 5px 0 0 10px;
+}
+.tcl{
+    background-color: red;
+    border: 1px solid red;
+}
+.betsson{
+    background-color: #F76300;
+    border: 1px solid #F76300;
+}
+
+/* footer strat  */
+
+.footer-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    width: 330px;
-    height: 474px;
-    margin-bottom: 27px;
-    border-radius: 5px;
+    margin: 100px 0 60px 0;
 }
-
-.player-image img{
-    padding-top: 15px;
-    width: 300px;
-    height: 256px;
-}
-
-.about-player{
-    width: 300px;
-    height: 169px;
-    overflow: hidden;
-}
-
-.about-player h1{
-    color: #18191F;
-    font-size: 28px;
-}
-
-.about-player p{
-    color: #6C6C6C;
-    font-size: 16px;
-    font-weight: 300;
-}
-/* Gallery Section Css End */
-
-/* Footer Section Css Start */
-
-footer{
-    width: 100%;
-}
-
-.footer-content{
-    width: 485px;
-    height: 213px;
-    margin: auto;
-}
-.footer-image img{
-    width: 480px;
-    height: 110px;
-    margin: 20px auto;
-}
-
-.social-icons{
-    width: 170px;
-    height: 32px;
-    display: grid;
-    align-items: flex-start;
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 14px;
-    margin: auto;
-}
-
-.social-icons a{
-    width: 32px;
-    text-decoration: none;
-    background-color: #e7e7e8;
+.footer-mid-icons i{
+    color: #969BAB;
+    background-color: #E7E7E8;
+    font-size: 15px;
+    margin: 5px;
+    padding: 7px;
     border-radius: 50%;
 }
-
-.social-icons a>i{
-    padding: 7.47px 7.47px;
-    color: #969bab;
-}
-
-
-footer p{
+.footer-end p{
     font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    margin-top: 20px;
-    padding-bottom: 63px;
 }
 
-/* Footer Section Css End */
 
-/* Media Qurey Css */
 
-@media only screen and (max-width:688px) {
-    body{
-        width: 360px;
-    }
+/* media query */
 
-    .top-container{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .top-data{
-        width: 100%;
-    }
+/* mobile devices */
 
-    .top-data h1{
-        width: 278px;
-        height: 138px;
-        font-size: 36px;
-        line-height: 50px;
-        margin-left: 16px;
-        margin-top: 112px;
-    }
-
-    .top-data a{
-        width: 168px;
-        height: 44px;
-        margin-top: 151px;
-        margin-left: 19px;
-    }
-
-    .top-data img{
-        width: 329px;
-        height: 259.17px;
-        margin-left: 15px;
-    }
-
-    /* Gallery Section Media Qurey */
-
-    
-    .gallery{
-        width: 360px;
-    }
+@media only screen and (max-width: 688px){
     .container{
-        width: 91%;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .players-info{
-        margin-right: 16px;
-    }
-
-    /* Footter Section Media Qurey */
-    
-    .footer-content{
-        width: 280px;
-        height: 75px;
-    }
-    .footer-content img{
-        width: 271px;
-        height: 63px;
-    }
-
-}
-
-
-/* Reponsive Design */
-
-@media only screen and (max-width:688px) {
-
-    
-    main{
-        width: 100%;
-        height: 656px;
-    }
-
-    .header-container{
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-
-    .header-content{
-        width: 90%;
-        margin: 0;
+    .copa-description{
+        margin-left: 20px;
     }
-
-    .left-part h1{
-        width: 100%;
-        height: 138px;
+    .copa-button{
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+    .copa-title h1{
         font-size: 36px;
-        line-height: 50px;
-        margin-top: 112px;
     }
+    .players, .videos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        width: 250px;
+        height: 440px;
+    }
+    .sponsors{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .footer-top img{
+        width: 60%;
+        margin-left: 70px;
+    }
+}
 
-    .header-content img{
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
         width: 100%;
-        height: 259.17px;
-        margin-top: 50px;
-        margin-bottom: 22px;
+        display: flex;
+        flex-direction: column;
     }
-    
+    .copa-description, .copa-banner img{
+        margin-left: 80px;
+    }
+    .copa-button{
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+    .copa-banner img{
+        width: 60%;
+    }
+    .players, .videos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponsors{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px 30px;
+    }
+    .footer-top img{
+        width: 80%;
+        margin-left: 10px;
+    }
 }
